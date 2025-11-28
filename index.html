@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zishan Mansuri — Portfolio</title>
+  <meta name="description" content="Portfolio of Sujal Bargat — developer &amp; marketer." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Zishan Mansuri</a>
+      <nav class="main-nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="btn small">🌙</button>
+      </nav>
+      <button class="burger" id="burger" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <h1>Hi, I’m <span class="accent">Zishan</span>.</h1>
+          <p class="lead">I build clean, accessible web interfaces and create growth through marketing. Open to roles in frontend / product / sales engineering.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn outline" href="resume.pdf" download>Download Resume</a>
+          </div>
+          <ul class="meta">
+            <li>📍 India</li>
+            <li>✉️ <a href="mailto:you@example.com">you@example.com</a></li>
+          </ul>
+        </div>
+        <div class="profile-card" aria-hidden="false">
+          <img src="https://via.placeholder.com/300x300.png?text=Your+Photo" alt="Sujal Bargat profile photo" />
+          <div class="card-stats">
+            <div><strong>5+</strong><span>Years</span></div>
+            <div><strong>20+</strong><span>Projects</span></div>
+            <div><strong>100%</strong><span>Client sat.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="container about" id="about">
+      <h2>About me</h2>
+      <p>I combine technical skills in front-end development with experience in sales & marketing. I enjoy translating customer needs into polished UI and measurable business impact.</p>
+      <p>Key focus: building responsive, accessible interfaces, API integration, and user-friendly forms & flows.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="container skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, React (basics)</p>
+        </div>
+        <div class="skill">
+          <h3>Tools</h3>
+          <p>Git, Postman, Chrome DevTools</p>
+        </div>
+        <div class="skill">
+          <h3>Databases</h3>
+          <p>MySQL basics</p>
+        </div>
+        <div class="skill">
+          <h3>Soft skills</h3>
+          <p>Sales & Marketing, Communication</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="container" id="projects">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x350?text=Portfolio" alt="Portfolio screenshot" />
+          <div class="project-body">
+            <h3>Personal Portfolio</h3>
+            <p>Responsive single-page portfolio with dark mode, contact form, and project showcase.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x350?text=E-commerce" alt="Ecommerce screenshot" />
+          <div class="project-body">
+            <h3>E-commerce Frontend</h3>
+            <p>Product listing, product detail mock, and cart UI (frontend only).</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x350?text=Dashboard" alt="Dashboard screenshot" />
+          <div class="project-body">
+            <h3>Admin Dashboard UI</h3>
+            <p>Data tables, charts (placeholder), and responsive layout demonstrating design systems.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="container contact" id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to reach out for work or collaboration, send a message below.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label>
+            Name
+            <input type="text" name="name" id="name" required minlength="2" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" id="email" required />
+          </label>
+        </div>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="5" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send message</button>
+          <button type="reset" class="btn outline">Reset</button>
+        </div>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sujal Bargat — Built with HTML/CSS/JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
